@@ -1,0 +1,10 @@
+<div class="w3-dropdown-hover">London
+  <div class="w3-dropdown-content w3-card-4" style="width:250px">
+    <img src="img_london.jpg" alt="London" style="width:100%">
+    <div class="w3-container">
+      <p>London is the capital city of England.</p>
+      <p>It is the most populous city in the UK.</p>
+    </div>
+  </div>
+</div>
+//////////////

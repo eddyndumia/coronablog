@@ -1,0 +1,24 @@
+.buttons {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.skip-navigation {
+   @include sr-only;
+   @include sr-only-focusable;
+   }
+.timeline {
+    display: flex;
+    justify-content: space-around;
+}
+.moreonyoutube {
+    text-align: center;
+    padding: 150px 100px;
+}
+.endfoot {
+    display: flex;
+}
+.endfoot a {
+    text-transform: none;
+    text-decoration: none;
+}

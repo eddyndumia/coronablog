@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>biocal</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery-3.4.0.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/css/__styles.css">
+    <link rel="icon" href="assets/images/ico.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+</head>
+<script>
+    function spread() {
+      document.getElementById('spread').style.display='block';
+      var elmnt = document.getElementById('spread');
+
+    }
+</script>
+<body>
+<!-----------------------------NAVIGATION BAR--------------------->
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand biocal " href="#" style="color: #cdab0b"><i class="fas fa-clinic-medical"></i>&nbsp;biocal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://who.int">WHO Init.</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Diseases</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">HIV/AIDS</a>
+                    <a class="dropdown-item" href="index.html">COVID-19</a>
+                    <a class="dropdown-item" href="#">Pneumonia</a>
+                    <a class="dropdown-item" href="#">Poliomyelitis (Polio)</a>
+                    <a class="dropdown-item" href="#">Anthrax</a>
+                    <a class="dropdown-item" href="#">PTSD</a>
+                    <a class="dropdown-item" href="#">Psittacosis (Parrot Fever)</a>
+                    <a class="dropdown-item" href="#">Full Directory</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.cdc.gov">CDC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.agakhanhospitals.org">Aga Khan Hosp.</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="contacts.php">Contacts</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<!---------------------------END OF NAVIGATION BAR---------------->
+
+<!--############################################################--->
+<!----COVID-19----->
+
+<div class="jumbotron mx-auto  " style="margin-top: 100px">
+    <h3><i class="fas fa-lungs-virus"></i>COVID-19 | <kbd>Corona Virus</kbd></h3>
+    <hr>
+<div class="d-flex">
+    <div class="flex-column">
+        <p>Coronavirus disease (COVID-19) is an infectious disease caused by a new virus.
+            The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.It belongs to a family of viruses called the coronaviruses that have strains that cause deadly diseases in mammals and birds.
+
+            The virus that causes the disease — like HIV causes AIDS — is called SARS-CoV-2.
+
+            These viruses are zoonotic, meaning they originate from animals to come to people.
+
+            So far, seven of them have made this migration: four little known ones that have been implicated in causing mild flu; Middle East respiratory syndrome (MERS) and Severe Acute respiratory syndrome (SARS) that have been deadly as well as but did not spread as fast Covid-19.
+
+            SARS and MERS, known as the ‘SARS classic, are estimated to have killed more than 1,500 people since 2002.
+
+            Initially, scientists had not expected COVID-19 to claim so many lives than SARS-classic but they have been shocked at the virus’ lethal itinerary.</p>
+        <div class="buttons">
+            <div class="">
+                    <button type="submit" class="btn btn-outline-danger btn-lg flex-column justify-content-around " onclick="document.getElementById('spread').scrollIntoView(true)">How it Spreads</button>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-outline-warning btn-lg justify-content-center" onclick="document.getElementById('symptoms').scrollIntoView(true)">Symptoms</button>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-outline-primary btn-lg flex-column" onclick="document.getElementById('origin').scrollIntoView(true)">Origin</button>
+                </div>
+        </div>
+    </div>
+    <figure class="figure mx-2 " >
+        <img src="assets/images/what_is_covid.png" onclick="document.getElementById('modal01').style.display='block'" class=" figure-img img-fluid rounded w3-hover-opacity">
+        <figcaption class="figure-caption">
+            <br>
+            <strong>SOURCE :</strong> <a href="https://who.int">WHO</a>
+            <br>
+        </figcaption>
+    </figure>
+    <div id="modal01" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <img class="w3-modal-content" src="assets/images/what_is_covid.png">
+    </div>
+
+</div>
+    <hr>
+</div>
+<!---COVID-19 JUMBOTRON END--->
+<!---#########################-->
+
+<!----SPREADING--------->
+<div class="jumbotron mx-auto border-danger" id="spread" >
+    <h3><i class="fas fa-viruses"></i>How Corona Virus Spreads</h3>
+    <hr>
+    <p>
+        Person-to-person contact is thought to be the main method of transmission for the SARS-CoV-2 virus, according to the Centers for Disease Control and Prevention (CDC)Trusted Source.
+
+        Imagine sitting next to someone with a SARS-CoV-2 infection on the bus or in a meeting room. Suddenly, this person sneezes or coughs.
+
+        If they don’t cover their mouth and nose, they could potentially spray you with respiratory droplets from their nose or mouth. The droplets that land on you will likely contain the virus.
+
+        Or perhaps you meet someone who contracted the virus, and they touched their mouth or nose with their hand. When that person shakes your hand, they transfer some of the virus to your hand.
+    </p>
+    <div class="media border p-3">
+        <img src="assets/images/WHOLogoTwitter.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+            <h6>World Health Organisation <small><i>Posted on February 19, 2020</i></small></h6>
+            <p>If you then touch your mouth or nose without washing your hands first, you may accidentally give that virus an entry point into your own body.</p>
+        </div>
+    </div>
+    <div class="media border p-3">
+        <img src="assets/images/cdc.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+            <h6>Centre For Disease Control, CDC <small><i>Posted on February 2, 2020</i></small></h6>
+            <p>If you are a healthcare provider, use your judgment to determine if a patient has signs and symptoms compatible with COVID-19 and whether the patient should be tested.</p>
+        </div>
+    </div>
+    <div class="media border p-3">
+        <img src="assets/images/kenya.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+            <h6>Kenya<small><i>Posted on March 27, 2020</i></small></h6>
+            <p>Kenya reported its first coronavirus-related death on Thursday evening, Health Secretary Mutahi Kagwe said in a statement.
+
+                The patient was a 66 year old male Kenyan citizen who....</p>
+            <button class="btn btn-outline-info"><a href="https://www.theeastafrican.co.ke/news/ea/Kenya-reports-the-first-coronavirus-related-death/4552908-5505410-yxa824z/index.html">Read More</a></button>
+        </div>
+    </div>
+    <span class="navbar-toggler-icon" style="color: #0d0d0d" onclick="document.getElementById('spread').style.display='none'"></span>
+</div>
+<!-------END OF SPREADING------>
+
+<!-----SYMPTOMS----->
+<div class="">
+    <div class="jumbotron mx-auto border-warning bg-light" id="symptoms">
+    <h3><i class="fas fa-lungs-virus"></i>Symptoms of <kbd>COVID-19</kbd></h3>
+    <hr>
+    People may be sick with the virus for 1 to 14 days before developing symptoms. The most common symptoms of coronavirus disease (COVID-19) are fever, tiredness, and dry cough. Most people (about 80%) recover from the disease without needing special treatment.
+    More rarely, the disease can be serious and even fatal. Older people, and people with other medical conditions (such as asthma, diabetes, or heart disease), may be more vulnerable to becoming severely ill.
+    <br>
+    <br>
+    <h5>People may experience the following:</h5>
+    <ul style="list-style: none">
+        <li><i class="fas fa-virus"></i>Cough</li>
+        <li><i class="fas fa-virus"></i>Fever</li>
+        <li><i class="fas fa-virus"></i>Tiredness</li>
+        <li><i class="fas fa-virus"></i>Difficulty in breathing</li>
+        <li><i class="fas fa-virus"></i>Some patients may have aches and pains</li>
+        <li><i class="fas fa-virus"></i>Nasal congestion</li>
+        <li><i class="fas fa-virus"></i>Sore throat or diarrhea</li>
+        <br>
+        <button class="btn btn-outline-success"><a href="https://www.telegraph.co.uk/news/2020/03/27/what-coronavirus-covid-19-virus-pandemic/">Read More</a></button>
+
+    </ul>
+</div>
+    <h3 class="mx-4 well"><i class="fas fa-globe"></i>World TimeLine</h3>
+    <hr>
+    <div class="d-flex container timeline">
+        <figure class="figure mx-2 " >
+            <img src="assets/images/wuhan1.jpg" class="figure-img img-fluid rounded" alt="Wuhan ,China.">
+            <figcaption class="figure-caption">Wuhan,China where the first case of the virus was recorded.
+                <br>
+                <strong>SOURCE :</strong> Aljazeera
+                <br>
+                <button class="btn btn-outline-success"><a href=""></a>Read Article</button>
+            </figcaption>
+        </figure>
+        <figure class="figure mx-2 " >
+            <img src="assets/images/timeline.jpg" class="figure-img img-fluid rounded" alt="Timeline spreading of the virus">
+            <figcaption class="figure-caption">General timeline and spreading of COVID-19
+                <br>
+                <strong style="color: #0d0d0d">SOURCE :</strong> Centre For Disease Control
+                <br>
+                <button class="btn btn-outline-success" ><a href="https://www.worldometers.info/coronavirus/">Read Article</a></button>
+            </figcaption>
+        </figure>
+        <figure class="figure mx-2 " >
+            <img src="assets/images/economy.jfif" class="figure-img img-fluid rounded" alt="Economy squandered">
+            <figcaption class="figure-caption">Economy squandered as COVID-19 forces businesses to shutdown in fear of spreading the virus
+                <br>
+                <strong>SOURCE :</strong> WORLD WIDE
+                <br>
+                <button class="btn btn-outline-success"><a href="https://www.cnbc.com/2020/03/12/coronavirus-impact-on-global-economy-financial-markets-in-6-charts.html">Read Article</a></button>
+            </figcaption>
+        </figure>
+    </div>
+    <hr>
+    <div class="text-center">
+        <button class="btn btn-outline-secondary btn-lg btn-block"><a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic">Read on Wikipedia <i class="fab fa-wikipedia-w fa-lg"></i></a></button>
+        <br>
+    </div></div>
+<!--END OF SYMPTOMS--->
+
+<!--ORIGIN---->
+<div class="jumbotron mx-auto" id="origin">
+    <h3><i class="fas fa-lungs-virus"></i>Origin Of Corona Virus</h3>
+    <hr>
+    <p class="text-justify">China alerted the WHO to cases of unusual pneumonia in Wuhan on December 31.
+
+        <kbd>COVID-19</kbd> is thought to have originated in a seafood market where wildlife was sold illegally.
+
+        On February 7, Chinese researchers said the virus could have spread from an infected animal to humans through illegally trafficked pangolins, prized in Asia for food and medicine.
+
+        Scientists have pointed to either bats or snakes as the possible source. </p>
+    <hr>
+    <!-- Media middle -->
+    <div class="">
+        <div class="media flex-row">
+            <div class="media-left media-middle">
+                <img src="assets/images/wiki.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Wikipedia </h4>
+                <p class="text-justify">The coronavirus belongs to a family of viruses that may cause various symptoms such as pneumonia, fever, breathing difficulty, and lung infection [1]. These viruses are common in animals worldwide, but very few cases have been known to affect humans. The World Health Organization (WHO) used the term 2019 novel coronavirus to refer to a coronavirus that affected the lower respiratory tract of patients with pneumonia in Wuhan, China on 29 December 2019 [2,3,4]. The WHO announced that the official name of the 2019 novel coronavirus is coronavirus disease (COVID-19) [4]. And the current reference name for the virus is severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). It was reported that a cluster of patients with pneumonia of unknown cause was linked to a local Huanan South China Seafood Market in Wuhan, Hubei Province, China in December 2019 [5].</p>
+            </div>
+        </div>
+        <div class="flex-row mx-lg-5">
+            <button class="btn btn-outline-danger"><a href="https://www.sciencedaily.com/releases/2020/03/200317175442.htm">Related Story</a></button>
+            <button class="btn btn-outline-warning"><a href="https://www.aljazeera.com/news/2020/01/china-coronavirus-500-words-200127065154334.html">Read More</a></button>
+            <br>
+        </div>
+    </div>
+    <hr>
+</div>
+<!---END OF ORIGIN-->
+
+<!---ABSTAIN--->
+<div class="jumbotron mx-auto" id="abstain">
+    <h3><i class="fas fa-lungs-virus"></i>Precautions to take? <i class="fas fa-pump-soap"></i> <i class="fas fa-plus"></i>&nbsp;<i class="fas fa-head-side-mask"></i> </h3>
+    <hr>
+    <div class="d-flex">
+        <div>
+            <p><i class="fas fa-virus"></i>Stay in home isolation for 14 days after returning home from outside countries, sleeping in a separate room, limiting contact with other family members and avoiding visitors.</p>
+            <p><i class="fas fa-virus"></i>Cover nose with elbow or handkerchief when sneezing.</p>
+            <p><i class="fas fa-virus"></i>Avoid close contact with anyone with cold or flu-like symptoms, maintaining a distance of at least 1 metre.</p>
+            <p><i class="fas fa-virus"></i>Wearing a mask is not necessary unless you are taking care of an infected person. The Centers for Disease Control (CDC) does recommend that only infected people wear masks to prevent the spread of the virus.</p>
+            <p><i class="fas fa-virus"></i>If soap and water are not readily available, use an alcohol-based hand sanitiser with at least 60% alcohol. Always wash hands with soap and water when hands are visibly dirty</p>
+            <p><i class="fas fa-virus"></i>Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom, before eating, and after blowing your nose, coughing, or sneezing.</p>
+            <p><i class="fas fa-virus"></i>If soap and water are not readily available, use an alcohol-based hand sanitiser with at least 60% alcohol. Always wash hands with soap and water when hands are visibly dirty.</p>
+            <p><i class="fas fa-virus"></i>Keep in mind the travel advisory set out by the Ministry of Health and Welfare</p>
+            <p><i class="fas fa-virus"></i>Clean and disinfect frequently-touched objects and surfaces using a regular household cleaning spray or wipe.</p>
+            <p><i class="fas fa-virus"></i>Avoid touching your eyes, nose, and mouth</p>
+        </div>
+        <figure class="figure mx-2 " >
+            <img src="assets/images/coronavirus_mask_who_1-x809.webp" class="figure-img img-fluid rounded w3-hover-opacity" onclick="document.getElementById('modal-image1').style.display='block'" alt="precautions for corona">
+            <figcaption class="figure-caption">The health ministry has published FAQs for citizens and guidelines for healthcare practitioners. (Follow the health ministry on Twitter at @MoHFW_INDIA and track its Disease Alerts page.)
+                <br>
+                <strong style="color: #0d0d0d">SOURCE :</strong> WHO | CDC |
+                <br>
+                <button class="btn btn-outline-success" ><a href="https://www.indiatoday.in/science/story/coronavirus-precautions-1640620-2020-01-27">VIEW FULL Article</a></button>
+            </figcaption>
+        </figure>
+    </div>
+    <div class=" w3-modal w3-animate-zoom">
+        <img src="assets/images/coronavirus_mask_who_1-x809.webp" class="w3-modal-content" alt="" id="modal-image1" onclick="this.style.display='none'" style="display: none">
+    </div>
+    <hr>
+</div>
+<div class="container container-fluid">
+    <h2><i class="fas fa-virus-slash"></i>Precaution Video? </h2>
+    <hr>
+    <div class="d-flex">
+        <div class="">
+            <iframe src="https://youtube.com/embed/QH1eXvmyYMk?autoplay=0?controls=1" frameborder="0" width="600" height="315"></iframe>
+            <hr>
+        </div>
+        <div class="moreonyoutube flex-column">
+            <button class="btn btn-outline-danger btn-lg "  >Watch More On <a href="https://www.youtube.com/results?search_query=Corona+Virus+Precautionary+Videos" style="text-decoration: none">Youtube<i class="fab fa-youtube "></i></a></button>
+        </div>
+
+    </div>
+    <div class="border-primary">
+        <h5>Follow World Health Organization on social media to get alerts</h5>
+        <br>
+        <div class="d-flex" >
+            <a href="https://twitter.com/who?lang=en"><i class="fab fa-twitter-square fa-3x"></i></a> &nbsp; &nbsp;&nbsp;&nbsp;
+            <a href="https://www.facebook.com/WHO/"><i class="fab fa-facebook-square fa-3x"></i></a>&nbsp; &nbsp;&nbsp;&nbsp;
+            <a href=""><i class="fab fa-google-plus-square fa-3x"></i></a>&nbsp; &nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/who/?hl=en"><i class="fab fa-instagram-square fa-3x"></i></a>&nbsp; &nbsp;&nbsp;&nbsp;
+            <a href="https://www.youtube.com/user/who"><i class="fab fa-youtube fa-3x"></i></a>&nbsp; &nbsp;&nbsp;&nbsp;
+            <a href="https://www.pinterest.com/worldhealthorganization/"><i class="fab fa-pinterest-square fa-3x"></i></a>
+        </div>
+        <hr>
+    </div>
+</div>
+
+<!---END OF ABSTAIN--->
+
+<!--#######FOOTER#######-->
+<div class=" navbar navbar-expand-sm bg-dark text-white d-flex" >
+    <div class="flex-row endfoot">
+        <ul style="list-style: none">
+            <li><a href="#" >Quick Links</a></li>
+            <li><a href="">Full Directory</a></li>
+            <li><a href="tel:+254703844453">Contact Author</a></li>
+            <li><a href="#">Consult Domain</a></li>
+            <li><a href="#">Report</a></li>
+        </ul>
+
+    </div>
+        <div class="mx-auto" >
+            <h6 style="color: white">Follow Author <i class="fas fa-user fa-lg"></i></h6>
+            <hr>
+            <a href="https://www.instagram.com/__ndush" ><i class="fab fa-instagram-square fa-2x"></i></a>&nbsp; &nbsp;&nbsp;&nbsp;
+            <a href="https://ke.linkedin.com/in/eddy-ndumia-5b39b5161"><i class="fab fa-linkedin fa-2x"></i></a>&nbsp; &nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/melange-exe"><i class="fab fa-github fa-2x"></i></a>
+            <hr>
+            <p style="text-transform: none">Copyright&copy; 2020  <a href="index.html" style="color:#cdab0b;text-transform: lowercase;"><i class="fas fa-clinic-medical fa-lg"></i>biocal</a></p>
+        </div>
+</div>
+<!-- END OF FOOTER--->
+</body>
+
+<!---SCRIPTS GO HERE SO THAT PAGES LOAD FASTER--->
+<script src="https://kit.fontawesome.com/d0c89347e6.js" crossorigin="anonymous"></script>
+
+
+</html>
